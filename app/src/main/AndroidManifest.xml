@@ -32,6 +32,10 @@
             android:name=".SearchContacts"
             android:label="@string/title_activity_search_contacts" >
         </activity>
+        <activity
+            android:name=".AddContact"
+            android:label="@string/title_activity_add_contact" >
+        </activity>
     </application>
 
 </manifest>

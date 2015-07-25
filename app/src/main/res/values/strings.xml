@@ -12,5 +12,6 @@
     <string name="title_activity_search_contacts">Search Contacts</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_add_contact">Add Contact</string>
 
 </resources>
