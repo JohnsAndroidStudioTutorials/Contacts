@@ -1,13 +1,13 @@
 package com.sartainstudios.contacts;
 
 import android.support.v4.app.NavUtils;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class AboutContacts extends ActionBarActivity {
+public class AboutContacts extends AppCompatActivity {
 
     // Starts and shows activity_my_contacts.
     @Override
@@ -15,7 +15,7 @@ public class AboutContacts extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_contacts);
         // Adds carrot to to left of icon on action bar to return to home
-        getActionBar().setDisplayHomeAsUpEnabled(true);
+        //getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     // Adds action bar icons or text to the action bar if present.
