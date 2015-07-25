@@ -13,7 +13,6 @@
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -25,7 +24,7 @@
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MyContacts"></meta-data>
+                android:value=".MyContacts"/>
         </activity>
         <activity
             android:name=".SearchContacts"
@@ -35,7 +34,7 @@
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MyContacts"></meta-data>
+                android:value=".MyContacts"/>
         </activity>
         <activity
             android:name=".AddContact"
@@ -45,7 +44,7 @@
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MyContacts"></meta-data>
+                android:value=".MyContacts"/>
         </activity>
         <activity
             android:name=".ContactsSettings"
@@ -55,7 +54,7 @@
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MyContacts"></meta-data>
+                android:value=".MyContacts"/>
         </activity>
     </application>
 
