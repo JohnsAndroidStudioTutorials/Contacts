@@ -37,21 +37,21 @@ public class MyContacts extends AppCompatActivity {
 
         //handle presses on the action bar items
         switch (item.getItemId()) {
-            //case R.id.action_search:
-             //   startActivity(new Intent(this, SearchActivity.class));
-            //    return true;
-           // case R.id.action_add_friend:
-          //      startActivity(new Intent(this, AddFriend.class));
-          //      return true;
-          //  case R.id.action_my_profile:
-          //      startActivity(new Intent(this, MyProfile.class));
-         //       return true;
+
+            case R.id.action_search:
+               startActivity(new Intent(this, SearchContacts.class));
+               return true;
+
+            case R.id.action_add_friend:
+               startActivity(new Intent(this, AddContact.class));
+              return true;
+
             case R.id.action_about:
                 startActivity(new Intent(this, AboutContacts.class));
                 return true;
-            //case R.id.action_settings:
-            //    startActivity(new Intent(this, SettingsActivity.class));
-            //    return true;
+            case R.id.action_settings:
+              startActivity(new Intent(this, ContactsSettings.class));
+               return true;
         }
 
         return super.onOptionsItemSelected(item);
