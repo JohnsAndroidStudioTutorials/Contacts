@@ -1,8 +1,12 @@
 <resources>
+    <!-- App name -->
     <string name="app_name">Contacts</string>
-    <string name="title_activity_my_contacts">My Contacts</string>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <!-- Activity names -->
+    <string name="title_activity_my_contacts">My Contacts</string>
     <string name="title_activity_about_contacts">About Contacts</string>
+
+    <!-- Action Bar strings -->
+    <string name="action_settings">Settings</string>
+
 </resources>

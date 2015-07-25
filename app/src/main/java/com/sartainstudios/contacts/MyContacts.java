@@ -8,6 +8,7 @@ import android.view.MenuItem;
 
 public class MyContacts extends AppCompatActivity {
 
+    // starts and shows activity_my_contacts
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
