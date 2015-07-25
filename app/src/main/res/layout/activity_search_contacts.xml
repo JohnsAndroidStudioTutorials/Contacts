@@ -9,4 +9,19 @@
     tools:context="com.sartainstudios.contacts.SearchContacts">
 
 
+    <SearchView
+        android:id="@+id/contacts_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:queryHint="search Contacts" />
+
+    <Button
+        android:id="@+id/submit_search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contacts_search"
+        android:layout_centerHorizontal="true"
+        android:text="Submit" />
 </RelativeLayout>

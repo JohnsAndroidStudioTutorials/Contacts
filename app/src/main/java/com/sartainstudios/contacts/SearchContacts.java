@@ -1,5 +1,7 @@
 package com.sartainstudios.contacts;
 
+import android.content.Intent;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -21,16 +23,32 @@ public class SearchContacts extends ActionBarActivity {
         return true;
     }
 
+    // Determines if Action bar item was selected. If true then do corresponding action.
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        //handle presses on the action bar items
+        switch (item.getItemId()) {
+
+            case android.R.id.home:
+                NavUtils.navigateUpFromSameTask(this);
+                return true;
+
+            case R.id.action_add_contact:
+                startActivity(new Intent(this, AddContact.class));
+                return true;
+
+            case R.id.action_my_contacts:
+                startActivity(new Intent(this, MyContacts.class));
+                return true;
+
+            case R.id.action_about:
+                startActivity(new Intent(this, AboutContacts.class));
+                return true;
+
+            case R.id.action_settings:
+                startActivity(new Intent(this, ContactsSettings.class));
+                return true;
         }
 
         return super.onOptionsItemSelected(item);

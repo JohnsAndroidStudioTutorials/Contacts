@@ -2,6 +2,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.sartainstudios.contacts.AddContact">
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
-        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@mipmap/ic_search"
+        android:title="@string/action_search"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_my_contacts"
+        android:icon="@mipmap/ic_people"
+
+        android:title="@string/action_my_contacts"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/action_about"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
 </menu>
