@@ -1,5 +1,6 @@
 package com.sartainstudios.contacts;
 
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,6 +14,8 @@ public class AboutContacts extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_contacts);
+        // Adds carrot to to left of icon on action bar to return to home
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     // Adds action bar icons or text to the action bar if present.
@@ -29,6 +32,13 @@ public class AboutContacts extends ActionBarActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
+
+        switch (item.getItemId()) {
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                NavUtils.navigateUpFromSameTask(this);
+                return true;
+        }
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
