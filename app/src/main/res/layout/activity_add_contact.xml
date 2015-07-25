@@ -2,8 +2,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.sartainstudios.contacts.AddContact">
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sartainstudios.contacts.AddContact"
+    android:orientation="vertical">
 
 
     <ScrollView
@@ -121,5 +124,10 @@
 
     </ScrollView>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Save Contact"
+        android:id="@+id/save_contact"/>
 
 </LinearLayout>
