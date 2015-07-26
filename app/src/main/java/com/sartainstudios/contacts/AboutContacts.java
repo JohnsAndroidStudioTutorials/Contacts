@@ -5,9 +5,11 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.support.v4.app.NavUtils;
 import android.os.Bundle;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,10 +29,23 @@ public class AboutContacts extends AppCompatActivity {
         displayVersionName.setText("Version" + " " + versionName);
     }
 
-    // Adds action bar icons or text to the action bar if present.
+    // Default onCreateOptionsMenu
+    /*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R..menu.menu_about_contacts., menu);
+        return true;
+    }
+    */
+
+    public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_about_contacts, menu);
+        // Action View
+        //MenuItem searchItem = menu.findItem(R.id.action_search);
+        //SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
+        // Configure the search info and add any event listeners
+        //return super.onCreateOptionsMenu(menu);
         return true;
     }
 
@@ -45,9 +60,6 @@ public class AboutContacts extends AppCompatActivity {
                 NavUtils.navigateUpFromSameTask(this);
                 return true;
 
-            case R.id.action_search:
-                startActivity(new Intent(this, SearchContacts.class));
-                return true;
 
             case R.id.action_add_contact:
                 startActivity(new Intent(this, AddContact.class));

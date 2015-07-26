@@ -47,16 +47,6 @@
         </activity>
         <!-- android:theme="@style/Theme.Holo.Light.DarkActionBar" -->
         <activity
-            android:name=".SearchContacts"
-            android:label="@string/title_activity_search_contacts"
-            android:parentActivityName=".MyContacts">
-
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MyContacts" />
-        </activity>
-        <activity
             android:name=".AddContact"
             android:label="@string/title_activity_add_contact"
             android:parentActivityName=".MyContacts">

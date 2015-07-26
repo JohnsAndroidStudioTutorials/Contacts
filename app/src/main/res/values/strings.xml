@@ -6,7 +6,6 @@
     <string name="title_activity_my_contacts">My Contacts</string>
     <string name="title_activity_about_contacts">About Contacts</string>
     <string name="title_activity_add_contact">Add Contact</string>
-    <string name="title_activity_search_contacts">Search Contacts</string>
 
     <!-- Action Bar strings -->
     <string name="action_search">Search</string>
