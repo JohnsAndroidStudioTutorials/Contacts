@@ -27,22 +27,6 @@ public class AboutContacts extends AppCompatActivity {
         displayVersionName.setText("Version" + " " + versionName);
     }
 
-    //PackageInfo pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
-    //version = pInfo.versionName;
-
-
-    //String versionName = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
-
-    //PackageManager manager = this.getPackageManager();
-    //PackageInfo info = manager.getPackageInfo(this.getPackageName(), 0);
-    //Toast.makeText(this,
-    //"PackageName = "+info.packageName+"\nVersionCode = "
-    //+info.versionCode+"\nVersionName = "
-    //+info.versionName+"\nPermissions = "+info.permissions,Toast.LENGTH_SHORT).
-
-    //show();
-
-
     // Adds action bar icons or text to the action bar if present.
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
