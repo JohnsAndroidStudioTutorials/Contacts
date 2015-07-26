@@ -24,7 +24,7 @@ public class AboutContacts extends AppCompatActivity {
 
         // sets textView to display version name
         TextView displayVersionName = (TextView) findViewById(R.id.display_version_name);
-        displayVersionName.setText("Version" + versionName);
+        displayVersionName.setText("Version" + " "versionName);
     }
 
     //PackageInfo pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
