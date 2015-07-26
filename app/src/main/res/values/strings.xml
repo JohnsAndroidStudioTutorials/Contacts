@@ -16,7 +16,7 @@
     <string name="action_my_contacts">My Contacts</string>
 
     <!-- About Activity Strings -->
-    <string name="about">This is an App created by John Sartain/Sartain Studio/John\'s Tutorials to provide a code refernce and make it easier for new developers to learn quickly by learning from example.</string>
+    <string name="about">This is an App created by John Sartain | Sartain Studio | John\'s Android Studio Tutorials to provide a code refernce and make it easier for new developers to learn quickly by learning from example.</string>
     <string name="copyright">Please reuse code in your project if you desire. You dont need to give attribution but if you can that would be appreitated. All I ask is that you dont sell this doesticly or commecrially for a profit or or other form of gain</string>
 
 

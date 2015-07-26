@@ -34,6 +34,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar" -->
         <activity
             android:name=".AboutContacts"
             android:label="@string/title_activity_about_contacts"
@@ -44,6 +45,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MyContacts" />
         </activity>
+        <!-- android:theme="@style/Theme.Holo.Light.DarkActionBar" -->
         <activity
             android:name=".SearchContacts"
             android:label="@string/title_activity_search_contacts"

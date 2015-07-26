@@ -1,8 +1,23 @@
 <resources>
 
+    <!--
+    Theme.AppCompat
+    Theme.AppCompat.Light
+    Theme.AppCompat.Light.DarkActionBar
+
+    @android:style/Widget.Holo.Light.ActionBar
+    @android:style/Widget.Holo
+    -->
+
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="MyActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">#2196F3</item>
+        <item name="android:textColor">#F44336</item>
     </style>
 
     <style name="Divider">
