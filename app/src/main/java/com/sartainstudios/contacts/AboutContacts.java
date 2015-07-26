@@ -14,32 +14,35 @@ import android.widget.Toast;
 
 public class AboutContacts extends AppCompatActivity {
 
+    String versionName = BuildConfig.VERSION_NAME;
+
     // Starts and shows activity_my_contacts.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_contacts);
-        // Adds carrot to to left of icon on action bar to return to home
+
+        // sets textView to display version name
+        TextView displayVersionName = (TextView) findViewById(R.id.display_version_name);
+        displayVersionName.setText("Version" + versionName);
     }
 
-    String versionName = context.getPackageManager()
-            .getPackageInfo(context.getPackageName(), 0).versionName;
-
-    int versionCode = BuildConfig.VERSION_CODE;
-    String versionName = BuildConfig.VERSION_NAME;
+    //PackageInfo pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
+    //version = pInfo.versionName;
 
 
-    PackageManager manager = this.getPackageManager();
-    PackageInfo info = manager.getPackageInfo(this.getPackageName(), 0);
-    Toast.makeText(this,
-            "PackageName = "+info.packageName+"\nVersionCode = "
-            +info.versionCode+"\nVersionName = "
-            +info.versionName+"\nPermissions = "+info.permissions,Toast.LENGTH_SHORT).
+    //String versionName = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
 
-    show();
+    //PackageManager manager = this.getPackageManager();
+    //PackageInfo info = manager.getPackageInfo(this.getPackageName(), 0);
+    //Toast.makeText(this,
+    //"PackageName = "+info.packageName+"\nVersionCode = "
+    //+info.versionCode+"\nVersionName = "
+    //+info.versionName+"\nPermissions = "+info.permissions,Toast.LENGTH_SHORT).
 
-    TextView tvVersionName = (TextView) findViewById(R.id.tv_versionName);
-    tvVersionName.setText(myVersionName);
+    //show();
+
+
     // Adds action bar icons or text to the action bar if present.
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
