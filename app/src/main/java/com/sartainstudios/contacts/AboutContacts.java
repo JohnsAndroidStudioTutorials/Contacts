@@ -18,6 +18,24 @@ public class AboutContacts extends AppCompatActivity {
         // Adds carrot to to left of icon on action bar to return to home
     }
 
+    String versionName = context.getPackageManager()
+            .getPackageInfo(context.getPackageName(), 0).versionName;
+
+    int versionCode = BuildConfig.VERSION_CODE;
+    String versionName = BuildConfig.VERSION_NAME;
+
+
+    PackageManager manager = this.getPackageManager();
+    PackageInfo info = manager.getPackageInfo(this.getPackageName(), 0);
+    Toast.makeText(this,
+            "PackageName = "+info.packageName+"\nVersionCode = "
+            +info.versionCode+"\nVersionName = "
+            +info.versionName+"\nPermissions = "+info.permissions,Toast.LENGTH_SHORT).
+
+    show();
+
+    TextView tvVersionName = (TextView) findViewById(R.id.tv_versionName);
+    tvVersionName.setText(myVersionName);
     // Adds action bar icons or text to the action bar if present.
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
