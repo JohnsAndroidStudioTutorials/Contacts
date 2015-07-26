@@ -31,10 +31,6 @@ public class MyContacts extends AppCompatActivity {
         //handle presses on the action bar items
         switch (item.getItemId()) {
 
-            case android.R.id.home:
-                NavUtils.navigateUpFromSameTask(this);
-                return true;
-
             case R.id.action_search:
                startActivity(new Intent(this, SearchContacts.class));
                return true;
