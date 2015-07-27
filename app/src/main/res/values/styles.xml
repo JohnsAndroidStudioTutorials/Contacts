@@ -9,21 +9,24 @@
 
     @android:style/Widget.Holo.Light.ActionBar
     @android:style/Widget.Holo
+    Theme.AppCompat.Light.DarkActionBar
     -->
 
     <!-- App Theme -->
-    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="@style/Theme.AppCompat">
         <item name="android:actionBarStyle">@style/AppActionBarTheme</item>
         <item name="actionBarStyle">@style/AppActionBarTheme</item>
-        <item name="android:actionBarWidgetTheme">@style/AppActionBarTheme</item>
-        <item name="android:windowActionBarOverlay">@style/AppActionBarTheme</item>
-        <item name="android:windowActionBar">@style/AppActionBarTheme</item>
     </style>
 
     <!-- Action Bar Theme -->
 
     <style name="AppActionBarTheme" parent="@style/Widget.AppCompat.Light.ActionBar">
         <item name="background">@color/blue_main</item>
+        <item name="android:actionOverflowButtonStyle">@color/blue_accent</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="colorPrimary">@color/blue_main</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textColorHint">@color/white</item>
     </style>

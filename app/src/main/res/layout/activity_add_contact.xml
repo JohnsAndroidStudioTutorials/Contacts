@@ -2,10 +2,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blue_accent"
     android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:background="@color/blue_accent"
+    android:paddingTop="?attr/actionBarSize"
     tools:context="com.sartainstudios.contacts.AddContact">
 
 
@@ -23,8 +24,8 @@
                 android:id="@+id/change_contact_picture"
                 android:layout_width="204dp"
                 android:layout_height="170dp"
-                android:src="@drawable/img_silhouette_question_mark"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:src="@drawable/img_silhouette_question_mark" />
 
             <EditText
                 android:id="@+id/name_edit_text_field"
