@@ -2,10 +2,15 @@
 
     <!--use this for white text and stuff in app <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"></style> -->
     <!--use this for black text and stuff in app <style name="AppTheme" parent="Theme.AppCompat.Light"></style> -->
+
     <!-- Other choices
     Theme.AppCompat
     Theme.AppCompat.Light
     Theme.AppCompat.Light.DarkActionBar
+
+    Theme.Holo.
+    Theme.Holo.Light
+    Theme.Holo.Light.DarkActionBar
 
     @android:style/Widget.Holo.Light.ActionBar
     @android:style/Widget.Holo
@@ -19,7 +24,6 @@
     </style>
 
     <!-- Action Bar Theme -->
-
     <style name="AppActionBarTheme" parent="@style/Widget.AppCompat.Light.ActionBar">
         <item name="background">@color/blue_main</item>
         <item name="android:actionOverflowButtonStyle">@color/blue_accent</item>
