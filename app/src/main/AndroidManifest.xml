@@ -27,8 +27,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MyContacts"
-            android:label="@string/title_activity_my_contacts"
-            android:screenOrientation="portrait">
+            android:label="@string/title_activity_my_contacts">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
