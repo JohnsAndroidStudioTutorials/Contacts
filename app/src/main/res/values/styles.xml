@@ -28,16 +28,6 @@
         <item name="android:textColorHint">@color/white</item>
     </style>
 
-
-    <!--
-        Theme.AppCompat
-        Theme.AppCompat.Light
-        Theme.AppCompat.Light.DarkActionBar
-
-        @android:style/Widget.Holo.Light.ActionBar
-        @android:style/Widget.Holo
-        -->
-
     <style name="Divider">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">2dp</item>
