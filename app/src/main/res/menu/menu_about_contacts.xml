@@ -7,7 +7,7 @@
         android:id="@+id/action_search"
         android:title="@string/action_search"
         android:icon="@mipmap/ic_search"
-        app:showAsAction="ifRoom|collapseActionView"
+        app:showAsAction="always"
         app:actionViewClass="android.support.v7.widget.SearchView" />
 
     <item
