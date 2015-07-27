@@ -3,13 +3,17 @@
     <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"></style> -->
 
     <style name="AppTheme" parent="@style/Theme.AppCompat.Light">
-        <item name="android:actionBarStyle">@style/MyActionBar</item>
-        <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionBarStyle">@style/AppActionBarTheme</item>
+        <item name="actionBarStyle">@style/AppActionBarTheme</item>
+        <item name="android:actionBarWidgetTheme">@style/AppActionBarTheme</item>
+        <item name="android:windowActionBarOverlay">@style/AppActionBarTheme</item>
+        <item name="android:windowActionBar">@style/AppActionBarTheme</item>
     </style>
 
-    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+    <style name="AppActionBarTheme" parent="@style/Widget.AppCompat.Light.ActionBar">
         <item name="background">@color/blue_main</item>
         <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
     </style>
 
 
