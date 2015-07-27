@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/blue_accent"
     tools:context="com.sartainstudios.contacts.AddContact">
 
 
