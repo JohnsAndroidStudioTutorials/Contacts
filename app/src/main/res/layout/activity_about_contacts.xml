@@ -7,24 +7,21 @@
     tools:context="com.sartainstudios.contacts.AboutContacts">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/layout_width_and_height_wrap"
         android:text="@string/about"
         android:id="@+id/about"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/layout_width_and_height_wrap"
         android:text="@string/copyright"
         android:id="@+id/copyright"
         android:layout_below="@+id/about"
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/layout_width_and_height_wrap"
         android:id="@+id/display_version_name"
         android:text="Version X.X.X"
         android:layout_alignParentBottom="true"
