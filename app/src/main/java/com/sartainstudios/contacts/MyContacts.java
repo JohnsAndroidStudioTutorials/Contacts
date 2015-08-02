@@ -2,6 +2,8 @@ package com.sartainstudios.contacts;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.SearchView;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -17,6 +19,18 @@ public class MyContacts extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_contacts);
+
+
+        Button addContact = (Button) findViewById(R.id.add_contact_button);
+        addContact.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MyContacts.this, AddContact.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     // Default onCreateOptionsMenu
