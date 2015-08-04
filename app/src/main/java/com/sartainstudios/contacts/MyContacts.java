@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 //import android.support.v7.widget.SearchView;
 import android.view.Menu;
 import android.view.MenuItem;
+
 import com.sartainstudios.contacts.FirstTimePreference;
 
 
@@ -27,19 +28,20 @@ public class MyContacts extends AppCompatActivity {
     public void jjaJJ() {
         if (String versionCode != previousVersionCode){
 
-            AlertDialog.Builder builder = new AlertDialog.Builder(MyContacts.this);
+    AlertDialog.Builder builder = new AlertDialog.Builder(MyContacts.this);
             builder.setTitle("Here is whats new in this version")
                     .setMessage(R.string.abc_search_hint)
                     .setNeutralButton(R.string.new_in_this_version, null);
 
             AlertDialog dialog = builder.create();
-            dialog.show();
+            dialog.show();.show();
 
         }
-    }
+
+ }
     */
     //String versionName = context.getPackageManager()
-      //      .getPackageInfo(context.getPackageName(), 0).versionName;
+    //      .getPackageInfo(context.getPackageName(), 0).versionName;
 
     // starts and shows activity_my_contacts
     @Override
