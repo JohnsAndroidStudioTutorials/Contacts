@@ -1,6 +1,8 @@
 package com.sartainstudios.contacts;
 
+import android.app.AlertDialog;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,9 +12,34 @@ import android.support.v7.app.AppCompatActivity;
 //import android.support.v7.widget.SearchView;
 import android.view.Menu;
 import android.view.MenuItem;
+import com.sartainstudios.contacts.FirstTimePreference;
 
 
 public class MyContacts extends AppCompatActivity {
+
+
+    int versionCode = BuildConfig.VERSION_CODE;
+    //int previousVersionCode = BuildConfig.VERSION_CODE - 1;
+
+    /*FirstTimePrefence();
+
+    FirstTimePreference();
+    public void jjaJJ() {
+        if (String versionCode != previousVersionCode){
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(MyContacts.this);
+            builder.setTitle("Here is whats new in this version")
+                    .setMessage(R.string.abc_search_hint)
+                    .setNeutralButton(R.string.new_in_this_version, null);
+
+            AlertDialog dialog = builder.create();
+            dialog.show();
+
+        }
+    }
+    */
+    //String versionName = context.getPackageManager()
+      //      .getPackageInfo(context.getPackageName(), 0).versionName;
 
     // starts and shows activity_my_contacts
     @Override
@@ -20,7 +47,7 @@ public class MyContacts extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_contacts);
 
-
+        // On button click starts AddContacts activity
         Button addContact = (Button) findViewById(R.id.add_contact_button);
         addContact.setOnClickListener(new View.OnClickListener() {
 
@@ -30,6 +57,7 @@ public class MyContacts extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
     }
 
