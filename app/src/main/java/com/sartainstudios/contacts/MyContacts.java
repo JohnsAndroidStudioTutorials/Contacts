@@ -22,7 +22,7 @@ public class MyContacts extends AppCompatActivity {
     int versionCode = BuildConfig.VERSION_CODE;
     //int previousVersionCode = BuildConfig.VERSION_CODE - 1;
 
-    /*FirstTimePrefence();
+    /*FirstTimePreference();
 
     FirstTimePreference();
     public void jjaJJ() {
