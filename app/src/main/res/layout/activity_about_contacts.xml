@@ -1,32 +1,35 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_accent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/blue_accent"
     tools:context="com.sartainstudios.contacts.AboutContacts">
 
     <TextView
-        style="@style/layout_width_and_height_wrap"
-        android:text="@string/about"
         android:id="@+id/about"
+        style="@style/layout_width_and_height_wrap"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:text="@string/about" />
 
     <TextView
-        style="@style/layout_width_and_height_wrap"
-        android:text="@string/copyright"
         android:id="@+id/copyright"
+        style="@style/layout_width_and_height_wrap"
         android:layout_below="@+id/about"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:text="@string/copyright" />
 
     <TextView
-        style="@style/layout_width_and_height_wrap"
         android:id="@+id/display_version_name"
-        android:text="Version X.X.X"
+        style="@style/layout_width_and_height_wrap"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="17dp" />
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="17dp"
+        android:clickable="true"
+        android:text="Version X.X.X" />
 
 </RelativeLayout>
