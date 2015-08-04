@@ -1,5 +1,6 @@
 package com.sartainstudios.contacts;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -16,7 +17,7 @@ import android.widget.Toast;
 
 public class AboutContacts extends AppCompatActivity {
 
-    String versionName = BuildConfig.VERSION_NAME;
+
 
     // Starts and shows activity_my_contacts.
     @Override
@@ -24,11 +25,26 @@ public class AboutContacts extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_contacts);
 
+        setVersionNameText();
         // sets textView to display version name
-        TextView displayVersionName = (TextView) findViewById(R.id.display_version_name);
-        displayVersionName.setText("Version" + " " + versionName);
+        //displayVersionName.setText("Version" + " " + versionName);
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(AboutContacts.this);
+        builder.setTitle("Here is whats new in this version")
+                .setMessage(R.string.new_in_this_version)
+                .setNeutralButton("OK", null);
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 
+    private void setVersionNameText(){
+        String versionName = BuildConfig.VERSION_NAME;
+        TextView displayVersionName = (TextView) findViewById(R.id.display_version_name);
+
+        // sets textView to display version name
+        displayVersionName.setText("Version" + " " + versionName);
+    }
     // Default onCreateOptionsMenu
     /*
     @Override
