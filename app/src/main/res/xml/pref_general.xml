@@ -4,7 +4,7 @@
         android:key="example_checkbox"
         android:title="@string/pref_title_social_recommendations"
         android:summary="@string/pref_description_social_recommendations"
-        android:defaultValue="true" />
+        android:defaultValue="False" />
 
     <!-- NOTE: EditTextPreference accepts EditText attributes. -->
     <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
