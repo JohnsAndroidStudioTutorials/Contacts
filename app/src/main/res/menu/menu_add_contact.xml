@@ -13,9 +13,8 @@
     <item
         android:id="@+id/action_my_contacts"
         android:icon="@mipmap/ic_people"
-
         android:title="@string/action_my_contacts"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
 
     <item
         android:id="@+id/action_about"
