@@ -10,6 +10,7 @@ import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,14 +19,28 @@ import android.widget.Toast;
 public class AboutContacts extends AppCompatActivity {
 
 
-
     // Starts and shows activity_my_contacts.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_contacts);
 
+        final int versionCode = BuildConfig.VERSION_CODE;
+
+
         setVersionNameText();
+
+        TextView versionName;
+        versionName = (TextView) findViewById(R.id.display_version_name);
+        versionName.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //display in short period of time
+                Toast.makeText(getApplicationContext(), versionCode, Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
         // sets textView to display version name
         //displayVersionName.setText("Version" + " " + versionName);
 
@@ -38,7 +53,7 @@ public class AboutContacts extends AppCompatActivity {
         dialog.show();
     }
 
-    private void setVersionNameText(){
+    private void setVersionNameText() {
         String versionName = BuildConfig.VERSION_NAME;
         TextView displayVersionName = (TextView) findViewById(R.id.display_version_name);
 
