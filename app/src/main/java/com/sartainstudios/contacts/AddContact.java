@@ -29,7 +29,7 @@ public class AddContact extends AppCompatActivity {
     */
 
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_about_contacts, menu);
+        getMenuInflater().inflate(R.menu.menu_add_contact, menu);
         // Action View
         //MenuItem searchItem = menu.findItem(R.id.action_search);
         //SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
