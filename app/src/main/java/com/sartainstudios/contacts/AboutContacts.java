@@ -26,20 +26,23 @@ public class AboutContacts extends AppCompatActivity {
         setContentView(R.layout.activity_about_contacts);
 
         final int versionCode = BuildConfig.VERSION_CODE;
-
+        final String versionName = BuildConfig.VERSION_NAME;
 
         setVersionNameText();
 
-        TextView versionName;
-        versionName = (TextView) findViewById(R.id.display_version_name);
-        versionName.setOnClickListener(new View.OnClickListener() {
+        TextView versionNameDisplay;
+        versionNameDisplay = (TextView) findViewById(R.id.display_version_name);
+        versionNameDisplay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //display in short period of time
-                Toast.makeText(getApplicationContext(), versionCode, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "This is build number" + " " + versionCode + ".", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "This is version number" + " " + versionName + ".", Toast.LENGTH_SHORT).show();
             }
         });
+        //display in short period of time
 
+        Toast.makeText(getApplicationContext(), "This is a plain toast.", Toast.LENGTH_SHORT).show();
 
         // sets textView to display version name
         //displayVersionName.setText("Version" + " " + versionName);
@@ -90,7 +93,6 @@ public class AboutContacts extends AppCompatActivity {
             case android.R.id.home:
                 NavUtils.navigateUpFromSameTask(this);
                 return true;
-
 
             case R.id.action_add_contact:
                 startActivity(new Intent(this, AddContact.class));
