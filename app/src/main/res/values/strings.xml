@@ -19,5 +19,9 @@
     <string name="copyright">Please reuse code in your project if you desire. You dont need to give attribution but if you can that would be appreitated. All I ask is that you dont sell this doesticly or commecrially for a profit or or other form of gain</string>
 
     <string name="new_in_this_version">• New Layout \n• New Design \n• New features</string>
+    <string name="version_name">Version X.X.X</string>
+    <string name="title_activity_version_information">Version Information</string>
+
+    <string name="hello_world">Hello world!</string>
 
 </resources>
