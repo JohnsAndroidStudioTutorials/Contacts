@@ -38,22 +38,18 @@ public class AboutContacts extends AppCompatActivity {
                 //display in short period of time
                 Toast.makeText(getApplicationContext(), "This is build number" + " " + versionCode + ".", Toast.LENGTH_SHORT).show();
                 Toast.makeText(getApplicationContext(), "This is version number" + " " + versionName + ".", Toast.LENGTH_SHORT).show();
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(AboutContacts.this);
+                builder.setTitle("Here is whats new in this version:")
+                        .setMessage(R.string.new_in_this_version)
+                        .setNeutralButton("OK", null); // try to link to version number
+
+                AlertDialog dialog = builder.create();
+                dialog.show();
+                
             }
         });
-        //display in short period of time
 
-        Toast.makeText(getApplicationContext(), "This is a plain toast.", Toast.LENGTH_SHORT).show();
-
-        // sets textView to display version name
-        //displayVersionName.setText("Version" + " " + versionName);
-
-        AlertDialog.Builder builder = new AlertDialog.Builder(AboutContacts.this);
-        builder.setTitle("Here is whats new in this version")
-                .setMessage(R.string.new_in_this_version)
-                .setNeutralButton("OK", null);
-
-        AlertDialog dialog = builder.create();
-        dialog.show();
     }
 
     private void setVersionNameText() {
