@@ -13,14 +13,16 @@
         style="@style/layout_width_and_height_wrap"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="@string/about" />
+        android:text="@string/about"
+        android:textSize="@dimen/abc_text_size_body_1_material" />
 
     <TextView
         android:id="@+id/copyright"
         style="@style/layout_width_and_height_wrap"
         android:layout_below="@+id/about"
         android:layout_centerHorizontal="true"
-        android:text="@string/copyright" />
+        android:text="@string/copyright"
+        android:textSize="@dimen/abc_text_size_body_1_material" />
 
     <TextView
         android:id="@+id/display_version_name"
@@ -30,6 +32,5 @@
         android:layout_alignParentRight="true"
         android:layout_marginBottom="17dp"
         android:clickable="true"
-        android:text="Version X.X.X" />
-
+        android:text="@string/version_name" />
 </RelativeLayout>
