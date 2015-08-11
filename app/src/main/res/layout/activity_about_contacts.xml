@@ -33,4 +33,5 @@
         android:layout_marginBottom="17dp"
         android:clickable="true"
         android:text="@string/version_name" />
+
 </RelativeLayout>
