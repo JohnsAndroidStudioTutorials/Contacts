@@ -1,0 +1,37 @@
+<resources>
+    <!-- App name -->
+    <string name="app_name">contactos</string>
+
+    <!-- Activity names -->
+    <string name="title_activity_my_contacts">Mi contactos</string>
+    <string name="title_activity_about_contacts">Acerca de contactos</string>
+    <string name="title_activity_add_contact">Añadir contactos</string>
+
+    <!-- Action Bar strings -->
+    <string name="action_search">buscar</string>
+    <string name="action_add_contact">Añadir Contacto</string>
+    <string name="action_about">Acerca de</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="action_my_contacts">MI contactos</string>
+
+    <!-- My Contacts strings -->
+    <string name="add_contacts">Añadir Contacto</string>
+
+    <!-- About Activity Strings -->
+    <string name="about">Esta es una aplicación creada por John Sartain | Sartain Studios | John\'s Android Studio Tutorials para proporcionar una referencia de código y hacer que sea más fácil para los nuevos desarrolladores aprenden rápidamente aprendiendo de ejemplo.</string>
+    <string name="copyright">Por favor, reutilizar código en su proyecto si lo desea. No es necesario para dar atribución pero si se puede que se agradece . Lo único que pido es que usted no vende este país y / o comercialmente para un beneficio u otra forma de ganancia.</string>
+
+    <string name="new_in_this_version">• Nueva presentación \n• Nuevo diseño \n• Las nuevas características</string>
+    <string name="version_name">Versión X.X.X</string>
+    <string name="title_activity_version_information">Información de versión</string>
+
+    <!-- Add Contacts hints strings -->
+    <string name="hints"></string>
+
+    <string name="version">versión</string>
+    <string name="this_is_build_number">Este es el número de compilación</string>
+    <string name="this_is_version_number">Este es el número de versión</string>
+    <string name="here_is_whats_new_in_this_version">Aquí es cuál es nuevo en esta versión:</string>
+    <string name="ok">Aceptar</string>
+
+</resources>
