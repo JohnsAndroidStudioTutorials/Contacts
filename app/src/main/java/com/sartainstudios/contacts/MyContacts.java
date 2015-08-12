@@ -19,7 +19,7 @@ import com.sartainstudios.contacts.FirstTimePreference;
 public class MyContacts extends AppCompatActivity {
 
 
-    int versionCode = BuildConfig.VERSION_CODE;
+    //int versionCode = BuildConfig.VERSION_CODE;
     //int previousVersionCode = BuildConfig.VERSION_CODE - 1;
 
     /*FirstTimePreference();
