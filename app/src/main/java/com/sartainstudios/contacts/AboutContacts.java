@@ -19,6 +19,7 @@ import android.widget.Toast;
 public class AboutContacts extends AppCompatActivity {
 
 
+
     // Starts and shows activity_my_contacts.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,11 @@ public class AboutContacts extends AppCompatActivity {
 
         final int versionCode = BuildConfig.VERSION_CODE;
         final String versionName = BuildConfig.VERSION_NAME;
+        final   String ok = getString(R.string.ok);
+        final  String thisIsVersionNumber = getString(R.string.this_is_version_number);
+        final    String thisIsBuildNumber = getString(R.string.this_is_build_number);
+        final   String hereIsWhatsNewInThisVersion = getString(R.string.here_is_whats_new_in_this_version);
+        final    String newInThisVersion = getString(R.string.new_in_this_version);
 
         setVersionNameText();
 
@@ -36,28 +42,28 @@ public class AboutContacts extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //display in short period of time
-                Toast.makeText(getApplicationContext(), "This is build number" + " " + versionCode + ".", Toast.LENGTH_SHORT).show();
-                Toast.makeText(getApplicationContext(), "This is version number" + " " + versionName + ".", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), thisIsVersionNumber + " " + versionCode + " ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), thisIsBuildNumber + " " + versionName + " ", Toast.LENGTH_SHORT).show();
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(AboutContacts.this);
-                builder.setTitle("Here is whats new in this version:")
-                        .setMessage(R.string.new_in_this_version)
-                        .setNeutralButton("OK", null); // try to link to version number
+                builder.setTitle(hereIsWhatsNewInThisVersion)
+                        .setMessage(newInThisVersion)
+                        .setNeutralButton(ok, null); // try to link to version number
 
                 AlertDialog dialog = builder.create();
                 dialog.show();
-                
             }
         });
 
     }
 
     private void setVersionNameText() {
+        final String version = getString(R.string.version);
         String versionName = BuildConfig.VERSION_NAME;
         TextView displayVersionName = (TextView) findViewById(R.id.display_version_name);
 
         // sets textView to display version name
-        displayVersionName.setText("Version" + " " + versionName);
+        displayVersionName.setText(version + " " + versionName);
     }
     // Default onCreateOptionsMenu
     /*
