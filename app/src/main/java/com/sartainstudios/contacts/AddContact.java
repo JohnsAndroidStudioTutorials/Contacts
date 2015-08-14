@@ -64,7 +64,7 @@ public class AddContact extends AppCompatActivity {
                 return true;
 
             case R.id.action_settings:
-                startActivity(new Intent(this, ContactsSettings.class));
+                startActivity(new Intent(this, Settings.class));
                 return true;
 
         }
