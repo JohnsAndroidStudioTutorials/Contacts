@@ -24,7 +24,7 @@
     <string name="new_in_this_version">• Nueva presentación \n• Nuevo diseño \n• Las nuevas características</string>
     <string name="version_name">Versión X.X.X</string>
     <string name="title_activity_version_information">Información de versión</string>
- 
+
     <!-- Add Contacts hints strings -->
     <string name="name_hint">Nombre (Primero Apellido)</string>
     <string name="phone_hint">Número de móvil (XX) XXXX-XXXX</string>
