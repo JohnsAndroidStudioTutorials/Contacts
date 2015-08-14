@@ -1,19 +1,13 @@
 package com.sartainstudios.contacts;
 
-import android.app.AlertDialog;
 import android.content.Intent;
-import android.content.pm.PackageInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.SearchView;
-import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 //import android.support.v7.widget.SearchView;
 import android.view.Menu;
 import android.view.MenuItem;
-
-import com.sartainstudios.contacts.FirstTimePreference;
 
 
 public class MyContacts extends AppCompatActivity {
@@ -22,24 +16,7 @@ public class MyContacts extends AppCompatActivity {
     //int versionCode = BuildConfig.VERSION_CODE;
     //int previousVersionCode = BuildConfig.VERSION_CODE - 1;
 
-    /*FirstTimePreference();
 
-    FirstTimePreference();
-    public void jjaJJ() {
-        if (String versionCode != previousVersionCode){
-
-    AlertDialog.Builder builder = new AlertDialog.Builder(MyContacts.this);
-            builder.setTitle("Here is whats new in this version")
-                    .setMessage(R.string.abc_search_hint)
-                    .setNeutralButton(R.string.new_in_this_version, null);
-
-            AlertDialog dialog = builder.create();
-            dialog.show();.show();
-
-        }
-
- }
-    */
     //String versionName = context.getPackageManager()
     //      .getPackageInfo(context.getPackageName(), 0).versionName;
 
@@ -99,7 +76,7 @@ public class MyContacts extends AppCompatActivity {
                 return true;
 
             case R.id.action_settings:
-                startActivity(new Intent(this, ContactsSettings.class));
+                startActivity(new Intent(this, Settings.class));
                 return true;
         }
 
