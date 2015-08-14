@@ -26,7 +26,21 @@
     <string name="title_activity_version_information">Información de versión</string>
 
     <!-- Add Contacts hints strings -->
-    <string name="hints"></string>
+    <string name="name_hint">Nombre (Primero Apellido)</string>
+    <string name="phone_hint">Número de móvil (XX) XXXX-XXXX</string>
+    <string name="email_hint">Dirección electrónica xxxxxxxxx@xmail.com</string>
+    <string name="address_hint">Dirección 111 SW Mi calle Dr</string>
+    <string name="city_hint">Ciudad La ciudad de Méxicoo</string>
+    <string name="state_hint">Estado California</string>
+    <string name="website_hint">Sitio web susitioweb.es</string>
+    <string name="birthday_hint">cumpleaños mes/día/año</string>
+    <string name="about_hint">Acerca de esta persona</string>
+    <string name="friend_choice">Amigo</string>
+    <string name="family_choice">Famila</string>
+    <string name="coworkers_choice">Compañeros de trabajo</string>
+    <string name="other_choice">Otro</string>
+    <string name="create_new_group_choice">Crear nuevo grupo</string>
+    <string name="save_contact_choice">Guardar Contacto</string>
 
     <string name="version">versión</string>
     <string name="this_is_build_number">Este es el número de compilación</string>
