@@ -54,6 +54,10 @@ public class AddContact extends AppCompatActivity {
                 startActivity(new Intent(this, MyContacts.class));
                 return true;
 
+            case R.id.action_add_current_contact:
+                //startActivity(new Intent(this, MyContacts.class));
+                return true;
+
             case R.id.action_about:
                 startActivity(new Intent(this, AboutContacts.class));
                 return true;
