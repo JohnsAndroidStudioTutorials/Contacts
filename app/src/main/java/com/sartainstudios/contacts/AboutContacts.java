@@ -83,6 +83,7 @@ public class AboutContacts extends AppCompatActivity {
         // Configure the search info and add any event listeners
         //return super.onCreateOptionsMenu(menu);
         return true;
+
     }
 
     // Determines if Action bar item was selected. If true then do corresponding action.
