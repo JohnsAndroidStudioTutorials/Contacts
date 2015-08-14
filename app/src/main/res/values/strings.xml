@@ -48,5 +48,8 @@
     <string name="this_is_version_number">This is version number</string>
     <string name="here_is_whats_new_in_this_version">Here is whats new in this version:</string>
     <string name="ok">OK</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="hello_world">Hello world!</string>
 
 </resources>

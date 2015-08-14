@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="language"
+        android:summary="Select your language"
+        android:title="Language" />
+    <SwitchPreference
+        android:key="developer_mode"
+        android:title="Developer Mode"
+        android:summary="Get access to the tools the programmers use" />
+
+</PreferenceScreen>
