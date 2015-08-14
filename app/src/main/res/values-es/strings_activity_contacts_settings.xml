@@ -7,8 +7,7 @@
     <string name="pref_header_general">General</string>
 
     <string name="pref_title_social_recommendations">Habilitar recomendaciones sociales</string>
-    <string name="pref_description_social_recommendations">Recomendaciones para las personas en contacto         
-        en base a su historial de mensajes
+    <string name="pref_description_social_recommendations">Recomendaciones para las personas en contacto en base a su historial de mensajes
     </string>
 
     <string name="pref_title_display_name">Mostrar nombre</string>
