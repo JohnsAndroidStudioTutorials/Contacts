@@ -50,12 +50,13 @@ public class AddContact extends AppCompatActivity {
                 NavUtils.navigateUpFromSameTask(this);
                 return true;
 
-            case R.id.action_my_contacts:
+            case R.id.action_add_current_contact:
                 startActivity(new Intent(this, MyContacts.class));
                 return true;
+            //TODO change icon
 
-            case R.id.action_add_current_contact:
-                //startActivity(new Intent(this, MyContacts.class));
+            case R.id.action_my_contacts:
+                startActivity(new Intent(this, MyContacts.class));
                 return true;
 
             case R.id.action_about:
