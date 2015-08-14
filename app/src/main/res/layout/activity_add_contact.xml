@@ -8,7 +8,6 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     tools:context="com.sartainstudios.contacts.AddContact">
 
-
     <ScrollView
         android:id="@+id/scrollView"
         style="@style/layout_width_and_height_match">
@@ -31,7 +30,7 @@
                 android:layout_gravity="center_horizontal"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:hint="Name (First Last)" />
+                android:hint="@string/name_hint" />
 
             <EditText
                 android:id="@+id/phone_edit_text_field"
@@ -39,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="phone"
-                android:hint="Phone (XXX) XXX-XXXX" />
+                android:hint="@string/phone_hint" />
 
             <EditText
                 android:id="@+id/email_edit_text_field"
@@ -48,7 +47,7 @@
                 android:layout_gravity="center_horizontal"
                 android:ems="10"
                 android:inputType="textEmailAddress"
-                android:hint="Email xxxxxxxxx@xmail.com" />
+                android:hint="@string/email_hint" />
 
             <EditText
                 android:id="@+id/address_edit_text_field"
@@ -57,7 +56,7 @@
                 android:layout_gravity="center_horizontal"
                 android:ems="10"
                 android:inputType="textPostalAddress"
-                android:hint="Address 111 SW My Street Dr" />
+                android:hint="@string/address_hint" />
 
             <EditText
                 android:id="@+id/city_edit_text_field"
@@ -66,7 +65,7 @@
                 android:layout_gravity="center_horizontal"
                 android:ems="10"
                 android:inputType="textPostalAddress"
-                android:hint="city San Francisco" />
+                android:hint="@string/city_hint" />
 
             <EditText
                 android:id="@+id/state_edit_text_field"
@@ -75,14 +74,13 @@
                 android:layout_gravity="center_horizontal"
                 android:ems="10"
                 android:inputType="textPostalAddress"
-                android:hint="State California" />
-
+                android:hint="@string/state_hint" />
 
             <EditText
                 android:id="@+id/website_edit_text_field"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Website yourwebsite.com" />
+                android:hint="@string/website_hint" />
 
             <EditText
                 android:id="@+id/birthday_edit_text_field"
@@ -91,7 +89,7 @@
                 android:layout_gravity="center_horizontal"
                 android:ems="10"
                 android:inputType="date"
-                android:hint="Birthday month/day/year" />
+                android:hint="@string/birthday_hint" />
 
             <EditText
                 android:id="@+id/about_edit_text_field"
@@ -100,7 +98,7 @@
                 android:layout_gravity="center_horizontal"
                 android:ems="10"
                 android:inputType="textMultiLine"
-                android:hint="About this person" />
+                android:hint="@string/about_hint" />
 
             <RadioGroup
                 style="@style/layout_width_and_height_wrap"
@@ -110,40 +108,40 @@
                     android:id="@+id/friend_radio_button_option"
                     style="@style/layout_width_and_height_wrap"
                     android:checked="false"
-                    android:hint="Friend" />
+                    android:hint="@string/friend_choice" />
 
                 <RadioButton
                     android:id="@+id/family_radio_button_option"
                     style="@style/layout_width_and_height_wrap"
                     android:checked="false"
-                    android:hint="Family" />
+                    android:hint="@string/family_choice" />
 
                 <RadioButton
                     android:id="@+id/coworker_radio_button_option"
                     style="@style/layout_width_and_height_wrap"
                     android:checked="false"
-                    android:hint="Coworkers" />
+                    android:hint="@string/coworkers_choice" />
 
                 <RadioButton
                     android:id="@+id/other_radio_button_option"
                     style="@style/layout_width_and_height_wrap"
                     android:checked="false"
-                    android:hint="Other" />
+                    android:hint="@string/other_choice" />
 
                 <Button
-                    android:id="@+id/coworker_button_option"
+                    android:id="@+id/create_new_option_radio_button_option"
                     style="@style/layout_width_and_height_wrap"
-                    android:hint="Create New Group" />
+                    android:hint="@string/create_new_group_choice" />
 
             </RadioGroup>
+
+            <Button
+                android:id="@+id/save_contact"
+                style="@style/layout_width_and_height_match"
+                android:text="@string/save_contact_choice" />
 
         </LinearLayout>
 
     </ScrollView>
-
-    <Button
-        android:id="@+id/save_contact"
-        style="@style/layout_width_and_height_match"
-        android:text="Save Contact" />
 
 </LinearLayout>
