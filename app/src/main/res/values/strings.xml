@@ -9,6 +9,7 @@
 
     <!-- Action Bar strings -->
     <string name="action_search">Search</string>
+    <string name="action_add_current_contact">Add Current Contact</string>
     <string name="action_add_contact">Add Contact</string>
     <string name="action_about">About</string>
     <string name="action_settings">Settings</string>
@@ -26,7 +27,21 @@
     <string name="title_activity_version_information">Version Information</string>
 
     <!-- Add Contacts strings -->
-    <string name="hints"></string>
+    <string name="name_hint">Name (First Last)</string>
+    <string name="phone_hint">Phone (XXX) XXX-XXXX</string>
+    <string name="email_hint">Email xxxxxxxxx@xmail.com</string>
+    <string name="address_hint">Address 111 SW My Street Dr</string>
+    <string name="city_hint">city San Francisco</string>
+    <string name="state_hint">State California</string>
+    <string name="website_hint">Website yourwebsite.com</string>
+    <string name="birthday_hint">Birthday month/day/year</string>
+    <string name="about_hint">About this person</string>
+    <string name="friend_choice">Friend</string>
+    <string name="family_choice">Family</string>
+    <string name="coworkers_choice">Coworkers</string>
+    <string name="other_choice">Other</string>
+    <string name="create_new_group_choice">Create New Group</string>
+    <string name="save_contact_choice">Save Contact</string>
 
     <string name="version">Version</string>
     <string name="this_is_build_number">This is build number</string>
