@@ -9,10 +9,11 @@
 
     <!-- Action Bar strings -->
     <string name="action_search">buscar</string>
+    <string name="action_add_current_contact">Añadir Contacto</string>
     <string name="action_add_contact">Añadir Contacto</string>
     <string name="action_about">Acerca de</string>
     <string name="action_settings">Ajustes</string>
-    <string name="action_my_contacts">MI contactos</string>
+    <string name="action_my_contacts">Mi contactos</string>
 
     <!-- My Contacts strings -->
     <string name="add_contacts">Añadir Contacto</string>

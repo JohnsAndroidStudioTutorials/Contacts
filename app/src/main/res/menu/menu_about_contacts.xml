@@ -4,13 +4,6 @@
     tools:context="com.sartainstudios.contacts.AboutContacts">
 
     <item
-        android:id="@+id/action_search"
-        android:title="@string/action_search"
-        android:icon="@mipmap/ic_search"
-        app:showAsAction="always"
-        app:actionViewClass="android.support.v7.widget.SearchView" />
-
-    <item
         android:id="@+id/action_add_contact"
         android:icon="@mipmap/ic_add_contact"
         android:title="@string/action_add_contact"

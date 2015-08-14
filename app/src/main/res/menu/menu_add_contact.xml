@@ -6,22 +6,14 @@
     <item
         android:id="@+id/action_add_current_contact"
         android:title="@string/action_add_current_contact"
-        android:icon="@mipmap/ic_plus"
-        app:showAsAction="always"
-        app:actionViewClass="android.support.v7.widget.SearchView" />
 
-    <item
-        android:id="@+id/action_search"
-        android:title="@string/action_search"
-        android:icon="@mipmap/ic_search"
-        app:showAsAction="always"
-        app:actionViewClass="android.support.v7.widget.SearchView" />
+        app:showAsAction="always" />
 
     <item
         android:id="@+id/action_my_contacts"
         android:icon="@mipmap/ic_people"
         android:title="@string/action_my_contacts"
-        app:showAsAction="always" />
+        app:showAsAction="never" />
 
     <item
         android:id="@+id/action_about"
