@@ -19,7 +19,6 @@ import android.widget.Toast;
 public class AboutContacts extends AppCompatActivity {
 
 
-
     // Starts and shows activity_my_contacts.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +27,11 @@ public class AboutContacts extends AppCompatActivity {
 
         final int versionCode = BuildConfig.VERSION_CODE;
         final String versionName = BuildConfig.VERSION_NAME;
-        final   String ok = getString(R.string.ok);
-        final  String thisIsVersionNumber = getString(R.string.this_is_version_number);
-        final    String thisIsBuildNumber = getString(R.string.this_is_build_number);
-        final   String hereIsWhatsNewInThisVersion = getString(R.string.here_is_whats_new_in_this_version);
-        final    String newInThisVersion = getString(R.string.new_in_this_version);
+        final String ok = getString(R.string.ok);
+        final String thisIsVersionNumber = getString(R.string.this_is_version_number);
+        final String thisIsBuildNumber = getString(R.string.this_is_build_number);
+        final String hereIsWhatsNewInThisVersion = getString(R.string.here_is_whats_new_in_this_version);
+        final String newInThisVersion = getString(R.string.new_in_this_version);
 
         setVersionNameText();
 
