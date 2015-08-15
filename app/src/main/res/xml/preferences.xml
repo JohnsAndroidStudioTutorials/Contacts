@@ -16,4 +16,14 @@
         android:textOn="@string/developer_mode_on"
         android:title="Developer Mode" />
 
+    <TextView
+        android:id="@+id/display_version_name"
+        style="@style/layout_width_and_height_wrap"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="17dp"
+        android:clickable="true"
+        android:text="@string/version_name" />
+
 </PreferenceScreen>
