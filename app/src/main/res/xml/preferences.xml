@@ -2,12 +2,18 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <ListPreference
+        android:defaultValue="true"
+        android:entries="@array/language_list"
+        android:entryValues="@array/language_values"
         android:key="language"
         android:summary="Select your language"
         android:title="Language" />
+
     <SwitchPreference
         android:key="developer_mode"
-        android:title="Developer Mode"
-        android:summary="Get access to the tools the programmers use" />
+        android:summary="Get access to the tools the programmers use"
+        android:textOff="@string/developer_mode_off"
+        android:textOn="@string/developer_mode_on"
+        android:title="Developer Mode" />
 
 </PreferenceScreen>
