@@ -5,4 +5,4 @@ This app is used as an example for teaching. It allows people to learn how to do
 
 For more information go to John's Android Stuido Tutorials on youtube. https://www.youtube.com/channel/UC8mX-MiAnXtp382gHTQg7Sw/
 
-For more information and documetnation of android development go to http://developer.android.com
+For more information and documentation of android development go to http://developer.android.com
