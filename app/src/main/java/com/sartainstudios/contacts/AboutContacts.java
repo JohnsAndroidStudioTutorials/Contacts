@@ -2,16 +2,12 @@ package com.sartainstudios.contacts;
 
 import android.app.AlertDialog;
 import android.content.Intent;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
 import android.support.v4.app.NavUtils;
 import android.os.Bundle;
-import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -101,7 +97,7 @@ public class AboutContacts extends AppCompatActivity {
                 return true;
 
             case R.id.action_my_contacts:
-                startActivity(new Intent(this, MyContacts.class));
+                startActivity(new Intent(this, ContactsView.class));
                 return true;
 
             case R.id.action_settings:
