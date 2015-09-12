@@ -32,13 +32,13 @@ public class Settings extends PreferenceActivity {
         //SharedPreferences languagePreferences = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
         //String language = languagePreferences.getString("Language", "2");
 
-        ListPreference languagePreferences = (ListPreference) findPreference("language_list");
+        //     ListPreference languagePreferences = (ListPreference) findPreference("language_list");
         //CharSequence[] entries = {"English", "Spanish"};
         //CharSequence[] entryValues = {"1", "2"};
         //languagePreferences.setEntries(entries);
         //languagePreferences.setDefaultValue("1");
         //languagePreferences.setEntryValues(entryValues);
-
+/*
         switch (languagePreferences) {
             case entryValues(1):
                 Locale locale = new Locale("en");
@@ -70,5 +70,7 @@ public class Settings extends PreferenceActivity {
         res.updateConfiguration(conf, dm);
         Intent refresh = new Intent(this, Settings.class);
         startActivity(refresh);
+    }
+    */
     }
 }
