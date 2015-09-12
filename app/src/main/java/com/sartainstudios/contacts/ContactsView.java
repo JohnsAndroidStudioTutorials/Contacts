@@ -10,7 +10,21 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class MyContacts extends AppCompatActivity {
+public class ContactsView extends AppCompatActivity {
+
+
+
+
+
+
+    // Add fab actiion button
+
+
+
+
+
+
+
 
 
     //int versionCode = BuildConfig.VERSION_CODE;
@@ -32,12 +46,10 @@ public class MyContacts extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MyContacts.this, AddContact.class);
+                Intent intent = new Intent(ContactsView.this, AddContact.class);
                 startActivity(intent);
             }
         });
-
-
     }
 
     // Default onCreateOptionsMenu

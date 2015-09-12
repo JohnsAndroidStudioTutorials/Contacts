@@ -50,9 +50,6 @@
     <string name="ok">OK</string>
     <string name="title_activity_settings">Settings</string>
 
-    <string name="developer_mode_on">Developer mode is on</string>
-    <string name="developer_mode_off">Developer mode is off</string>
-
     <string-array name="language_list">
         <item>English</item>
         <item>Spanish</item>

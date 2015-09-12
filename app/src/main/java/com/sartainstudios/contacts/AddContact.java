@@ -3,11 +3,9 @@ package com.sartainstudios.contacts;
 import android.content.Intent;
 import android.support.v4.app.NavUtils;
 import android.os.Bundle;
-import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.SearchView;
 
 
 public class AddContact extends AppCompatActivity {
@@ -51,12 +49,12 @@ public class AddContact extends AppCompatActivity {
                 return true;
 
             case R.id.action_add_current_contact:
-                startActivity(new Intent(this, MyContacts.class));
+                startActivity(new Intent(this, ContactsView.class));
                 return true;
             //TODO change icon
 
             case R.id.action_my_contacts:
-                startActivity(new Intent(this, MyContacts.class));
+                startActivity(new Intent(this, ContactsView.class));
                 return true;
 
             case R.id.action_about:

@@ -6,7 +6,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:background="@color/blue_accent"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.sartainstudios.contacts.MyContacts"
+    tools:context="com.sartainstudios.contacts.ContactsView"
     android:orientation="vertical">
 
     <ImageView
